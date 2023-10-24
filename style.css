@@ -106,6 +106,8 @@ body {
     width:476px;
     display: flex;
     align-items: center;
+    bottom: 38%;
+    position: fixed;
 }
 
 .cookies-container .cookies-img {
