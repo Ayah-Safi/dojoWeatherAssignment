@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="nav-bar-container">
+            <h1 class="header-txt">DojoWeather</h1>
+            <ul class="cities-list">
+                <li class="city-name" onclick="displayAlert(this)">Burbank</li>
+                <li class="city-name" onclick="displayAlert(this)">Chicago</li>
+                <li class="city-name" onclick="displayAlert(this)">Dallas</li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <div class="header-container">
+                <p class="location">San Jose</p>
+                <div>
+                    <label for="temperature-scales">show temperature in </label>
+                    <select name="temperature-scales" id="temperature scales" onchange="convertTemp(this)">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </div>    
+            </div>
+            <div class="weather-blocks">
+                <div class="today weather-block">
+                    <span class="day-name">Today</span>
+                    <img  class="weather-img" src="assets/some_rain.png" alt="rainy-weather-img">
+                    <span class="weather-desc">some rain</span>
+                    <div class="temps-in-row">
+                        <span class="day-temp" id="day-temp">24°</span> 
+                        <span class="night-temp" id="night-temp">18°</span>
+                    </div>
+                </div>
+
+                <div class="tomorrow weather-block">
+                    <span class="day-name">Tomorrow</span>
+                    <img  class="weather-img" src="assets/some_sun.png" alt="sunny-weather-img">
+                    <span class="weather-desc">some sun</span>
+                    <div class="temps-in-row">
+                        <span class="day-temp" id="day-temp">27°</span>
+                        <span class="night-temp" id="night-temp">19°</span>
+                    </div>
+
+                </div>
+
+                <div class="friday weather-block">
+                    <span class="day-name">Friday</span>
+                    <img  class="weather-img" src="assets/some_clouds.png" alt="cloudy-weather-img">
+                    <span class="weather-desc">some clouds</span>
+                    <div class="temps-in-row">
+                        <span class="day-temp" id="day-temp">21°</span>
+                        <span class="night-temp" id="night-temp">16°</span>
+                    </div>
+                </div>
+
+                <div class="saturday weather-block">
+                    <span class="day-name">Saturday</span>
+                    <img class="weather-img" src="assets/some_sun.png" alt="sunny-weather-img">
+                    <span class="weather-desc">some sun</span>
+                    <div class="temps-in-row">
+                        <span class="day-temp" id="day-temp">26°</span>
+                        <span class="night-temp" id="night-temp">21°</span>
+                    </div>     
+                </div>
+            </div>
+
+            <div class="cookies-container" id="cookiesbox">
+                <img class = "cookies-img" src="assets/cookie.png" alt="cookies-img">
+                <div class = "txt">
+                    <h4 class="cookies-header">Stop! Cookie time</h4>
+                    <p class="cookies-body">We use cookies (sadly not the edible ones) to <br>personalize content and ads, to provide social media features and <br>to analyse our traffic. <a href="#"> Read more...</a></p>
+                </div>
+                <button class="agree-btn" onclick="hideCookiesBox()">I Accept</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

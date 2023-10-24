@@ -1,0 +1,137 @@
+body {
+    margin: 0 auto;
+    width:600px
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Neue', cursive;
+}
+
+.main-container .nav-bar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9fc5f8;
+    color: white;  
+    margin: 0px;
+}
+
+.nav-bar-container ul {
+    display:flex;
+    gap: 20px;
+}
+
+.nav-bar-container ul li {
+    list-style: none;
+}
+
+.main-container .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.content-container .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-radius: 4% ;
+    width:476px;
+    
+}
+
+.header-container .location {
+    font-weight: 900;
+    font-size: 27px;
+    margin: 10px 0px;
+    padding-left: 0px;
+
+}
+
+.content-container .weather-blocks {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width:476px;
+    justify-content: space-between;
+}
+
+.weather-blocks  .weather-block { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 15px;;
+}
+
+.weather-block .weather-desc {
+    font-size: 12px;
+}
+
+
+.weather-block .weather-img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 10px 0px;   
+}
+
+.weather-block .temps-in-row {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+
+.weather-block .day-temp {
+    color: red;
+    font-weight: 900;
+}
+
+.weather-block .night-temp {
+    color: blue;
+    font-weight: 900; 
+}
+
+.main-container .cookies-container {
+    background-color: #EEEEEE;
+    border: 2px solid black;
+    margin-top: 10px;
+    width:476px;
+    display: flex;
+    align-items: center;
+}
+
+.cookies-container .cookies-img {
+    width: 38px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+.cookies-container h4,p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.cookies-container .txt {
+    padding: 5px 15px;
+    margin: 0px;
+}
+
+.cookies-container button {
+    background-color: #A0C5F8;
+    border: solid black;
+    box-shadow: 1px 1px black;
+    font-size: 10px;
+    padding-left: 2px;
+    margin-left:10px;
+    text-align: center;
+    font-weight: 800px;
+}
